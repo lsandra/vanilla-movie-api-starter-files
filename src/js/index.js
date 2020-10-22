@@ -1,23 +1,5 @@
-const pkmn = "alakazam";
-/* function getPkmn() {
-  fetch(`https://pokeapi.co/api/v2/pokemon/luxray`)
-    .then((result) => {
-      //console.log(result);
-      return result.json();
-    })
-    .then((data) => {
-      console.log(data);
-    });
-}
-getPkmn();
- */
-async function getPkmn() {
-  try {
-    const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${pkmn}`);
-    const data = await result.json();
-    console.log(data);
-  } catch (error) {
-    alert("Please check spelling");
-  }
-}
-getPkmn();
+const DOMSelectors = {
+  grid: document.querySelector(".movie-grid"),
+};
+
+const key = "1fd276ec57b4baedacae00246e5cf4b7";
